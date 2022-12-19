@@ -1,0 +1,17 @@
+header {
+    background-color:  #FFD900;
+    height: 118px;
+}
+header img {   
+    margin: 2%;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.containera {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
