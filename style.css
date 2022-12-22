@@ -62,10 +62,33 @@ h3 {
     color: #E33881;
     font-size: 20px;
     height: 36px;
-    margin-left: 5%;
-    
+    margin-left: 5%;        
+}
+.crono {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Verdana';
+}
+#dias{    
+    color: #514988;
+    font-weight: 700;
+    font-size: 70px;
 
-        
+}
+#horas{      
+    color: #514988;
+    font-weight: 700;
+    font-size: 70px;
+}
+#minutos{
+    color: #514988;  
+    font-weight: 700;
+    font-size: 70px;
+}
+#segundos{   
+    color: #514988;   
+    font-weight: 700;
+    font-size: 70px;
 }
 button {
     height: 118px;
