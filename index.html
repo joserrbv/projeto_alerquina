@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -45,7 +45,7 @@
                 <label><b> PARA A MAIOR CCXP DE TODOS OS TEMPOS </b> </label>
             </div>
             <div>
-                <video autoplay muted controls loop src="Arlequina.mp4" ></video>
+                <video autoplay muted controls loop src="./Arlequina.mp4" ></video>
             </div>
         </div>
 
@@ -55,17 +55,18 @@
     </div>
     <main class="containera">
         <div id="images">
-            <img src="./image1.svg" alt="">
-            <img src="./image2.svg" alt="">
-            <img src="./image3.svg" alt="">
-            <img src="./image4.svg" alt="">
+            <img src="./image1.svg" onmouseover="highlightCard('#quinta')" onmouseout="highlightCard('#quinta')" id="quinta" alt="">
+            <img src="./image2.svg" onmouseover="highlightCard('#sexta')" onmouseout="highlightCard('#sexta')"  id="sexta" alt="">
+            <img src="./image3.svg" onmouseover="highlightCard('#sabado')" onmouseout="highlightCard('#sabado')"  id="sabado" alt="">
+            <img src="./image4.svg" onmouseover="highlightCard('#domingo')" onmouseout="highlightCard('#domingo')"  id="domingo" alt="">
 
         </div>
         <div id="botao">
             <button><b> GARANTA O SEU! </b></button>
         </div>
     </main>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
+    <script src="main.js"></script>
     
 </body>
 </html>
