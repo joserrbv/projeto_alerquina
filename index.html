@@ -32,13 +32,13 @@
         <div class="logo">
             <div class="crono" id="time">
 
-                <div id="dias">00</div> <span></span>     
+                <div id="dias">00</div>     
                
-                <div id="horas">00</div> <span></span>                 
+                <div id="horas">00</div>                  
                 
-                <div id="minutos">00</div><span></span>                 
+                <div id="minutos">00</div>                
                 
-                <div id="segundos">00</div><span></span> 
+                <div id="segundos">00</div> 
                 
             </div>         
             <div id="label">
@@ -55,16 +55,39 @@
     </div>
     <main class="containera">
         <div id="images">
-            <img src="./image1.svg" onmouseover="highlightCard('#quinta')" onmouseout="highlightCard('#quinta')" id="quinta" alt="">
-            <img src="./image2.svg" onmouseover="highlightCard('#sexta')" onmouseout="highlightCard('#sexta')"  id="sexta" alt="">
-            <img src="./image3.svg" onmouseover="highlightCard('#sabado')" onmouseout="highlightCard('#sabado')"  id="sabado" alt="">
-            <img src="./image4.svg" onmouseover="highlightCard('#domingo')" onmouseout="highlightCard('#domingo')"  id="domingo" alt="">
+            <img src="./image1.svg" 
+            onclick="selectCard('#quinta')"
+            onmouseover="highlightCard('#quinta')" 
+            onmouseout="highlightCard('#quinta')" id="quinta" alt="">
+
+            <img src="./image2.svg" 
+            onclick="selectCard('#sexta')"
+            onmouseover="highlightCard('#sexta')" 
+            onmouseout="highlightCard('#sexta')"  id="sexta" alt="">
+
+            <img src="./image3.svg" 
+            onclick="selectCard('#sabado')"
+            onmouseover="highlightCard('#sabado')" 
+            onmouseout="highlightCard('#sabado')"  id="sabado" alt="">
+
+            <img src="./image4.svg" 
+            onclick="selectCard('#domingo')"
+            onmouseover="highlightCard('#domingo')" 
+            onmouseout="highlightCard('#domingo')"  id="domingo" alt="">
 
         </div>
         <div id="botao">
-            <button><b> GARANTA O SEU! </b></button>
+            <button onclick="showSelectedCards()"><b> GARANTA O SEU! </b></button>
         </div>
+        
     </main>
+<div class="forma">
+    <form action="https://www.google.com">
+        <input type="email" placeholder="Seu email" required>
+        <input id="envie" type="submit" />
+
+    </form>
+</div >
     <script src="./script.js"></script>
     <script src="main.js"></script>
     

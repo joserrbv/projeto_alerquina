@@ -1,6 +1,13 @@
-function highlightCard(selector)
+const ingressos = [];
+
+function addRedBorder(id) {
+    element = document.querySelector(`#${id}`);
+    element.style.border = "5px solid red";
+}
+
+function highlightCard(cadId)
 {
-    var element = document.querySelector(selector);
+    var element = document.getElementById(cardId);
     element.classList.toggle("card-highlight");
 }
 
@@ -12,7 +19,8 @@ function checkKeyboardCode()
         var code = event.code;
 
         alert(`Tecla pressionada ${name} \r\n Key code value: ${code}`);
-    }, false);
+    }, false
+    );
 }
 function addkeyboardEventListeners()
 {
@@ -59,4 +67,20 @@ function addkeyboardEventListeners()
     }, false);
 
 }
+
+selectCard = (selector) => {
+    var element = document.querySelector(selector);
+    element.classList.toggle("card-selected");
+
+    if (ingressos.includes(selector)) ingressos.pop(selector);
+
+    else ingressos.push(selector)
+}
+
+showSelectedCards = () =>
+{
+    if (ingressos.length > 0) alert("ingressos Selecionados:" + ingressos);
+
+}
+
 addkeyboardEventListeners();
